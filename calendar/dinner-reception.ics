@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invitation//Kanpur 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dinner-reception-20261126@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261126T153000Z
+SUMMARY:Dinner & Reception
+LOCATION:Golden Palace\, Sarojini Nagar\, Mariyampur Chauraha\, Kanpur
+DESCRIPTION:9:00 PM IST. Golden Palace\, Sarojini Nagar\, Mariyampur Chaura
+ ha\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=Golden%20Palace%2C%20Sa
+ rojini%20Nagar%2C%20Mariyampur%20Chauraha%2C%20Kanpur
+END:VEVENT
+END:VCALENDAR

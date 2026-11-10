@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invitation//Kanpur 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mehendi-20261125@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261125T133000Z
+SUMMARY:Mehendi
+LOCATION:SB Castle\, Below Govindpuri Bridge\, near SB Car Showroom\, Kanpu
+ r
+DESCRIPTION:7:00 PM IST. SB Castle\, Below Govindpuri Bridge\, near SB Car 
+ Showroom\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=SB%20Castle%2C%20below%
+ 20Govindpuri%20Bridge%2C%20near%20SB%20Car%20Showroom%2C%20Kanpur
+END:VEVENT
+END:VCALENDAR

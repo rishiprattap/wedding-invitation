@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invitation//Kanpur 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mata-ji-ki-chowki-20261124@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261124T103000Z
+SUMMARY:Mata Ji Ki Chowki
+LOCATION:SB Castle\, Below Govindpuri Bridge\, near SB Car Showroom\, Kanpu
+ r
+DESCRIPTION:4:00 PM onwards IST. SB Castle\, Below Govindpuri Bridge\, near
+  SB Car Showroom\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=SB%20Castle%2C%20below%
+ 20Govindpuri%20Bridge%2C%20near%20SB%20Car%20Showroom%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:haldi-20261125@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261125T063000Z
+SUMMARY:Haldi
+LOCATION:SB Castle\, Below Govindpuri Bridge\, near SB Car Showroom\, Kanpu
+ r
+DESCRIPTION:12:00 PM IST. SB Castle\, Below Govindpuri Bridge\, near SB Car
+  Showroom\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=SB%20Castle%2C%20below%
+ 20Govindpuri%20Bridge%2C%20near%20SB%20Car%20Showroom%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:mehendi-20261125@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261125T133000Z
+SUMMARY:Mehendi
+LOCATION:SB Castle\, Below Govindpuri Bridge\, near SB Car Showroom\, Kanpu
+ r
+DESCRIPTION:7:00 PM IST. SB Castle\, Below Govindpuri Bridge\, near SB Car 
+ Showroom\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=SB%20Castle%2C%20below%
+ 20Govindpuri%20Bridge%2C%20near%20SB%20Car%20Showroom%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:tel-bukki-20261125@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261125T163000Z
+SUMMARY:Tel Bukki
+LOCATION:SB Castle\, Below Govindpuri Bridge\, near SB Car Showroom\, Kanpu
+ r
+DESCRIPTION:10:00 PM IST. SB Castle\, Below Govindpuri Bridge\, near SB Car
+  Showroom\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=SB%20Castle%2C%20below%
+ 20Govindpuri%20Bridge%2C%20near%20SB%20Car%20Showroom%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:sehrabandi-dikh-20261126@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261126T103000Z
+SUMMARY:Sehrabandi (Dikh)
+LOCATION:SB Castle\, Below Govindpuri Bridge\, near SB Car Showroom\, Kanpu
+ r
+DESCRIPTION:4:00 PM IST. SB Castle\, Below Govindpuri Bridge\, near SB Car 
+ Showroom\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=SB%20Castle%2C%20below%
+ 20Govindpuri%20Bridge%2C%20near%20SB%20Car%20Showroom%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:baaraat-20261126@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261126T120000Z
+SUMMARY:Baaraat
+LOCATION:Depart from Mariyampur Chauraha to Golden Palace\, Kanpur
+DESCRIPTION:5:30 PM IST. Depart from Mariyampur Chauraha to Golden Palace\,
+  Kanpur.
+URL:https://www.google.com/maps/dir/?api=1&origin=Mariyampur%20Chauraha%2C%
+ 20Kanpur&destination=Golden%20Palace%2C%20Sarojini%20Nagar%2C%20Mariyampur
+ %20Chauraha%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:mangal-phere-vedi-20261126@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261126T133000Z
+SUMMARY:Mangal Phere (Vedi)
+LOCATION:Golden Palace\, Sarojini Nagar\, Mariyampur Chauraha\, Kanpur
+DESCRIPTION:7:00 PM IST. Golden Palace\, Sarojini Nagar\, Mariyampur Chaura
+ ha\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=Golden%20Palace%2C%20Sa
+ rojini%20Nagar%2C%20Mariyampur%20Chauraha%2C%20Kanpur
+END:VEVENT
+BEGIN:VEVENT
+UID:dinner-reception-20261126@kanpur-wedding.invalid
+DTSTAMP:20261110T000000Z
+DTSTART:20261126T153000Z
+SUMMARY:Dinner & Reception
+LOCATION:Golden Palace\, Sarojini Nagar\, Mariyampur Chauraha\, Kanpur
+DESCRIPTION:9:00 PM IST. Golden Palace\, Sarojini Nagar\, Mariyampur Chaura
+ ha\, Kanpur.
+URL:https://www.google.com/maps/search/?api=1&query=Golden%20Palace%2C%20Sa
+ rojini%20Nagar%2C%20Mariyampur%20Chauraha%2C%20Kanpur
+END:VEVENT
+END:VCALENDAR
