@@ -8,7 +8,7 @@ Extract the ZIP and open `index.html` in a browser. You can also serve the repos
 
 ## Edit
 
-- `index.html` contains the couple's names, family details, events, and venue links.
+- `index.html` contains the text, events, and venue links. The cover currently reads “Our Wedding.”
 - `style.css` contains colors, typography, and responsive layouts.
 - `photos` contains the three supplied portraits, optimized for the web. The generated meadow artwork is `landscape.webp`.
 - `calendar` contains individual and combined calendar files. Start times are stored in UTC and represent the published India Standard Time. Only start times were supplied. If you change a date, time, or venue, update the corresponding calendar file and the combined file. Update the countdown dates in `invite.js` if the wedding dates move.
