@@ -148,12 +148,6 @@ section[id]{scroll-margin-top:1rem}
 .closing .lotus,.closing .eyebrow{color:var(--gold)}
 .closing .script{margin:.65rem 0 .25rem}
 .closing-date{margin-bottom:.6rem}
-.closing-welcome{display:grid;gap:1.2rem;max-width:65rem;margin:1.65rem auto 0;padding:1.4rem .25rem;border-block:1px solid #e2c39470}
-.closing-welcome-group{min-width:0}
-.closing-welcome-group h3{margin-bottom:.45rem}
-.closing-welcome-group p{font-size:clamp(1.1rem,2.05vw,1.25rem);line-height:1.38}
-.closing-verse{margin:1.15rem auto .45rem;color:#ffedcc;font-style:italic;line-height:1.4}
-@media(min-width:48rem){.closing-welcome{grid-template-columns:1fr 1.45fr 1.25fr}}
 @keyframes arrive{from{opacity:0;transform:translateY(.8rem)}to{opacity:1;transform:none}}
 .will-reveal{opacity:0;transform:translateY(1.15rem);transition:opacity .72s ease,transform .72s cubic-bezier(.2,.72,.3,1)}
 .will-reveal.is-visible,.will-reveal:focus-within{opacity:1;transform:none}
