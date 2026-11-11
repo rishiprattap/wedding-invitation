@@ -47,6 +47,7 @@ const music = document.querySelector('#wedding-music');
 const musicToggle = document.querySelector('#music-toggle');
 music.volume = 0.12;
 musicToggle.hidden = false;
+let musicStarting = false;
 
 try {
   music.muted = sessionStorage.getItem('wedding-music-muted') === 'true';
@@ -57,15 +58,19 @@ try {
 function updateMusicButton() {
   musicToggle.textContent = music.muted
     ? '♫ Unmute music'
+    : musicStarting ? '♫ Starting music…'
     : music.paused ? '♫ Play music' : '♫ Mute music';
 }
 
 async function playMusic() {
+  musicStarting = true;
+  updateMusicButton();
   try {
     await music.play();
   } catch {
-    // The play button lets guests retry when playback is blocked.
+    // Browsers may require another guest interaction to allow sound.
   }
+  musicStarting = false;
   updateMusicButton();
 }
 
@@ -84,19 +89,41 @@ musicToggle.addEventListener('click', () => {
   updateMusicButton();
 });
 
-document.addEventListener('click', event => {
-  if (!musicToggle.contains(event.target) && !music.muted) {
+function startMusicOnInteraction(event) {
+  if (!musicToggle.contains(event.target) && !music.muted && music.paused) {
     void playMusic();
   }
-}, { once: true });
+}
+
+document.addEventListener('pointerup', startMusicOnInteraction, { capture: true });
+document.addEventListener('click', startMusicOnInteraction, { capture: true });
+
+document.querySelector('.hero-link').addEventListener('click', () => {
+  music.muted = false;
+  void playMusic();
+  try {
+    sessionStorage.setItem('wedding-music-muted', 'false');
+  } catch {
+    // Guests can enable sound even when session storage is unavailable.
+  }
+});
+
+music.addEventListener('playing', () => {
+  musicStarting = false;
+  document.removeEventListener('pointerup', startMusicOnInteraction, { capture: true });
+  document.removeEventListener('click', startMusicOnInteraction, { capture: true });
+  updateMusicButton();
+});
 
 music.addEventListener('play', updateMusicButton);
 music.addEventListener('pause', updateMusicButton);
 music.addEventListener('volumechange', updateMusicButton);
 music.addEventListener('error', () => {
+  musicStarting = false;
   musicToggle.textContent = '♫ Retry music';
 });
 updateMusicButton();
+if (!music.muted) void playMusic();
 
 if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver(entries => {
