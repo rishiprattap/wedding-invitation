@@ -43,6 +43,61 @@ function tick() {
 }
 tick();
 
+const music = document.querySelector('#wedding-music');
+const musicToggle = document.querySelector('#music-toggle');
+music.volume = 0.12;
+musicToggle.hidden = false;
+
+try {
+  music.muted = sessionStorage.getItem('wedding-music-muted') === 'true';
+} catch {
+  // Playback also works when the browser disables session storage.
+}
+
+function updateMusicButton() {
+  musicToggle.textContent = music.muted
+    ? '♫ Unmute music'
+    : music.paused ? '♫ Play music' : '♫ Mute music';
+}
+
+async function playMusic() {
+  try {
+    await music.play();
+  } catch {
+    // The play button lets guests retry when playback is blocked.
+  }
+  updateMusicButton();
+}
+
+musicToggle.addEventListener('click', () => {
+  if (music.muted || music.paused) {
+    music.muted = false;
+    void playMusic();
+  } else {
+    music.muted = true;
+  }
+  try {
+    sessionStorage.setItem('wedding-music-muted', String(music.muted));
+  } catch {
+    // A disabled storage setting does not prevent the mute control working.
+  }
+  updateMusicButton();
+});
+
+document.addEventListener('click', event => {
+  if (!musicToggle.contains(event.target) && !music.muted) {
+    void playMusic();
+  }
+}, { once: true });
+
+music.addEventListener('play', updateMusicButton);
+music.addEventListener('pause', updateMusicButton);
+music.addEventListener('volumechange', updateMusicButton);
+music.addEventListener('error', () => {
+  musicToggle.textContent = '♫ Retry music';
+});
+updateMusicButton();
+
 if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {

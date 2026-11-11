@@ -164,3 +164,5 @@ section[id]{scroll-margin-top:1rem}
   .will-reveal{opacity:1;transform:none}
 }
 .memory:nth-child(1){grid-row:1}.memory:nth-child(2){grid-row:2}.memory:nth-child(3){grid-row:3}
+.music-toggle{position:fixed;z-index:10;right:max(1rem,env(safe-area-inset-right));bottom:max(1rem,env(safe-area-inset-bottom));min-height:44px;padding:.7rem 1rem;border:1px solid var(--gold);border-radius:2rem;background:#30271ff2;color:var(--ivory);box-shadow:0 3px 16px #0004;font:600 .75rem var(--sans);letter-spacing:.03em}
+.music-toggle:hover{background:#48402f}

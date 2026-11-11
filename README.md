@@ -19,7 +19,10 @@ Upload the site files to a static host so `index.html` is at the site root. Incl
 
 For Antideploy, upload the repository folder. The share card is configured for the suggested address `https://ritesh-weds-prerna.antideploy.app/`. If Antideploy assigns a different URL, replace `https://ritesh-weds-prerna.antideploy.app` in the three metadata URLs in `index.html` and upload the folder again. Share the public site URL after confirming that `/wedding-card.jpg` loads on it.
 
+## Background music
+
+The supplied MP3 is at `audio/wedding-song.mp3`. Music starts after the guest's first click or tap and loops at 12% volume where the browser supports volume control. The floating button plays, mutes, or unmutes the track. The mute choice is remembered for the browser session.
+
 ## Artwork and fonts
 
 The meadow is generated artwork based on the reference video's muted olive wildflower field, hazy low hills, and vintage film palette. The portraits are supplied photographs. Allura and Cormorant Garamond are distributed under the SIL Open Font License included in `fonts`.
-
